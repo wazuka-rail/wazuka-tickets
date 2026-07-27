@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "LocalNotoSans";
+  src:
+    local("Noto Sans JP"),
+    local("Noto Sans CJK JP"),
+    local("Source Han Sans JP"),
+    local("Source Han Sans");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LocalNotoSans";
+  src:
+    local("Noto Sans JP"),
+    local("Noto Sans CJK JP"),
+    local("Source Han Sans JP"),
+    local("Source Han Sans");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@property --font-noto-sans {
+  syntax: "*";
+  initial-value: sans-serif;
+  inherits: true;
+}
+
+@theme inline {
+  --color-*: initial;
+
+  --color-primary-light: #409110;
+  --color-primary: #338000;
+  --color-primary-dark: #176100;
+
+  --color-secondary-light: #e10262;
+  --color-secondary: #d0025f;
+  --color-secondary-dark: #ba025a;
+
+  --color-gray-light: #515151;
+  --color-gray: #333333;
+  --color-gray-dark: #131313;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-sans: "LocalNotoSans", var(--font-noto-sans), sans-serif;
+
+  --grid-template-columns-dl: auto 1fr;
+}
+
+@layer base {
+  body {
+    @apply text-gray min-h-screen antialiased;
+  }
+
+  main {
+    @apply flex-grow mx-auto max-w-(--breakpoint-2xl) p-4 sm:p-8 md:p-8;
+  }
+
+  button {
+    @apply inline-flex items-center gap-2 font-bold text-sm px-3 py-2 rounded ease-linear transition-all duration-100;
+  }
+
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  button svg {
+    @apply w-5 h-5 flex-shrink-0;
+  }
+
+  button.filled {
+    @apply bg-primary text-white mr-1 mb-1 shadow;
+  }
+
+  button:hover.filled {
+    @apply bg-primary-light shadow-lg;
+  }
+
+  h1 {
+    @apply text-2xl font-bold mt-4 mb-2;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  dl {
+    @apply grid grid-cols-dl m-2;
+  }
+
+  dl dt {
+    @apply p-1 max-w-xl font-bold;
+  }
+
+  dl dd {
+    @apply p-1;
+  }
+}

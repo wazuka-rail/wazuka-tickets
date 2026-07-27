@@ -1,0 +1,34 @@
+{
+  "name": "wazuka-tickets",
+  "version": "0.1.0",
+  "private": true,
+  "author": "wazuka-rail",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "overrides": {
+    "postcss": "^8.5.23",
+    "sharp": "^0.35.3",
+    "svgo": "^4.0.2"
+  },
+  "dependencies": {
+    "next": "^16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.1.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.5.4",
+    "babel-plugin-react-compiler": "1.0.0",
+    "dprint": "^0.55.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6"
+  }
+}
