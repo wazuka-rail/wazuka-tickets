@@ -2,6 +2,7 @@ import Head from "next/head";
 import type { ReactElement } from "react";
 import Layout from "../components/Layout";
 import { fontTicketDate } from "../components/Layout";
+import { fontTicketMisc } from "../components/Layout";
 import Link from "../components/Link";
 import type { NextPageWithLayout } from "./_app";
 
@@ -23,7 +24,7 @@ const Fonts: NextPageWithLayout = () => {
           で提供しています。
         </div>
 
-        <h2>Wazuka-Ticket-Date</h2>
+        <h2 className="mt-8">Wazuka-Ticket-Date</h2>
         <div className="text-4xl m-8 shadow-sm">
           <span className={fontTicketDate.className}>.-0123456789</span>
         </div>
@@ -32,6 +33,24 @@ const Fonts: NextPageWithLayout = () => {
             <button className="filled">Download TTF</button>
           </Link>
           <Link href="fonts/ticket-date.woff2">
+            <button className="filled">Download WOFF2</button>
+          </Link>
+        </div>
+
+        <h2 className="mt-8">Wazuka-Ticket-Misc</h2>
+        <div className="text-4xl m-8 shadow-sm">
+          <span
+            className={fontTicketMisc.className}
+            style={{ fontVariantLigatures: "discretionary-ligatures" }}
+          >
+            ゆきから小
+          </span>
+        </div>
+        <div className="mx-8 flex gap-8">
+          <Link href="fonts/ticket-misc.ttf">
+            <button className="filled">Download TTF</button>
+          </Link>
+          <Link href="fonts/ticket-misc.woff2">
             <button className="filled">Download WOFF2</button>
           </Link>
         </div>
