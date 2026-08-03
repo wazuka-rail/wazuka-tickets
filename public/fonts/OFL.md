@@ -1,7 +1,9 @@
 Copyright (c) 2026, wazuka-rail,
 with Reserved Font Name 'Wazuka-Ticket-Date'.
-&nbsp;
 
+Copyright (c) 2026, wazuka-rail,
+with Reserved Font Name 'Wazuka-Ticket-Misc'.
+&nbsp;
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

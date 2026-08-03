@@ -96,3 +96,5 @@ def generate_fonts(basename, majver, minver, years, weight, italicangle, upos, u
 
 
 generate_fonts("ticket-date", 0, 1, "2026", "Regular", -12, -256, 100, 0xA0)
+
+generate_fonts("ticket-misc", 0, 1, "2026", "Regular", 0, -200, 100, 0x20)

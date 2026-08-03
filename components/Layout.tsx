@@ -15,6 +15,10 @@ export const fontTicketDate = localFont({
   adjustFontFallback: "Times New Roman",
 });
 
+export const fontTicketMisc = localFont({
+  src: "../public/fonts/ticket-misc.woff2",
+});
+
 type LayoutProps = {
   readonly children: ReactElement;
 };
