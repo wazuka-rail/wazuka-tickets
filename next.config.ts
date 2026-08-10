@@ -33,6 +33,10 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  experimental: {
+    turbopackFileSystemCacheForBuild: false,
+    turbopackFileSystemCacheForDev: false,
+  },
 };
 
 export default nextConfig;
