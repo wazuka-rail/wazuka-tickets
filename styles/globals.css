@@ -46,6 +46,8 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
+  --color-silver: #dddddd;
+
   --font-sans: "LocalNotoSans", var(--font-noto-sans), sans-serif;
 
   --grid-template-columns-dl: auto 1fr;
@@ -98,5 +100,15 @@
 
   dl dd {
     @apply p-1;
+  }
+
+  .bg-stripe {
+    background: repeating-linear-gradient(
+      -45deg,
+      #f8f8f8,
+      #f8f8f8 1px,
+      #ffffff 0,
+      #ffffff 5px
+    );
   }
 }
